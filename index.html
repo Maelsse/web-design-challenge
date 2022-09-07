@@ -1,12 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Design Challenge</title>
 </head>
+
 <body>
-    
+    <!-- HEADER -->
+    <div>
+        <div class="row">
+            <div class="col col-6 homebtn">
+                <a class="navbar-brand" href="#">Latitude</a>
+            </div>
+            <div class="col col-6 menubuttons divtop">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Plots
+                                </a> 
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="Visualizations/cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="Visualizations/temperature.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="Visualizations/humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="Visualizations/windspeed.html">Windspeed</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comparisons.html">Comparisons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="data.html">Data</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN BODY -->
+    <div class="container">
+        <br>
+        <div class="row">
+            <!-- left side -->
+            <div class="col col-12 col-md-8 divbdy">
+                <br>
+                <h1>Summary: Latitude vs. X</h1>
+                <hr>
+                <img src="resources/assets/images/Fig1.png" alt="Latitude vs Temperature" width="280">
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on
+                    over 500 cities.</p>
+                <br>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                    Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides
+                    the source data and visualizations created as part of the analysis, as well as explanations and
+                    descriptions of any trends and correlations witnessed.</p>
+                <hr>
+            </div>
+            <!-- LEFT SIDE END -->
+            <!-- RIGHT SIDE START -->
+            <div class="col col-12 col-md-4 divbdy">
+                <br>
+                <h2>Visualizations</h2>
+                <hr>
+                <div class="row">
+                    <div class="col col-3 col-md-6">
+                        <a href="Visualizations/temperature.html"><img src="resources/assets/images/Fig1.png">Latitude vs. Temperature</a>
+                    </div>
+                    <div class="col col-3 col-md-6">
+                        <a href="Visualizations/humidity.html"><img src="resources/assets/images/Fig2.png">Latitude vs. Humidity</a>
+                    </div>
+                    <div class="col col-3 col-md-6">
+                        <a href="Visualizations/cloudiness.html"><img src="resources/assets/images/Fig3.png">Latitude vs. Cloudiness</a>
+                    </div>
+                    <div class="col col-3 col-md-6">
+                        <a href="Visualizations/windpseed.html"><img src="resources/assets/images/Fig4.png">Latitude vs. Windspeed</a>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT SIDE END -->
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
