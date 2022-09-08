@@ -1,101 +1,164 @@
 img {
-    max-width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightseagreen;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: gray;
+  text-align: left;
+}
+
+.navbar {
+  position: absolute;
+  right: 30px;
+}
+
+.navbar a {
+  background-color: white;
+}
+
+.box {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 10px 30px 10px;
+  color: #ffffff;
+  background-color: white;
+
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: lightgray;
+}
+
+table,
+th,
+td {
+  border: 1.5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: auto;
+  text-align: center;
+  font-size: auto;
+}
+
+.col {
+  width: 100%;
+}
+
+.homebtn {
+  background-color: white;
+  z-index: 2;
+}
+
+.homebtn a {
+  width: 110px;
+  background: lightseagreen;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 14px;
+  margin: 0px 0px 0px 40px;
+}
+
+.compp {
+  text-align: center;
+}
+
+.divtop {
+  background-color: white;
+  z-index: 2;
+}
+
+.imgbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.imgbox:hover {
+  border-color: lightseagreen;
+  border-style: solid;
+}
+
+.divtable {
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+  width: fit-content;
+}
+
+.divbtm {
+  width: 100%;
+  /* position:absolute; */
+  bottom: 0;
+  background-color: gray;
+  z-index: 0;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+}
+
+/* Adding media queries to....when the screen is smaller than 480 pixels */
+@media (max-width: 600px) {
+  .navbar li {
+    padding: 10px;
   }
-  
-  #imgsel{
-    border: lightseagreen 2px solid;
+
+  .homebtn {
+    background-color: lightseagreen;
+    align-items: flex-end;
   }
-  
-  h1, h2, h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: lightseagreen;
-  }
-  
-  h1{
-    font-size: 24px;
-    font-weight: bold;
-    text-align:left;
-  }
-  
-  h2{
-    font-size: 22px;
-    font-weight: bold;
-    text-align:left;
-  }
-  
-  h3{
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  p{
-    color: gray;
-    text-align:left;
-  }
-  
-  .navbar{
-      position: absolute;
-      right: 30px;
-  }
-  
-  .navbar a{
-    background-color:white;
-  }
-  
-  body {
-    width: 100%;
-    min-height:100%;
-    background-color: lightgray;
-  }
-  
-  .col {
-    width: 100%;
-  } 
-  
-  .homebtn{
-    background-color: white;
-    z-index:2;
-  }
-  
-  .homebtn a{
-    width: 110px;
-    background: lightseagreen;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    font-weight: bold;
+
+  .homebtn a {
     color: white;
-    text-align: center;
-    display: block;
-    padding: 14px;
-    margin: 0px 0px 0px 40px;
   }
-  
-  .divtop{
-    background-color: white;
-    z-index:2;
+
+  .navbar ul {
+    visibility: shown;
   }
-  
-  .divbdy{
-    background-color: white;
-    z-index:1;
+
+  .divtop {
+    background-color: lightseagreen;
   }
-  
-  .divtable{
-    text-align:center;
-    background-color: white;
-    z-index:1;
+
+  #nav-select {
+    visibility: visible;
   }
-  
-  .divbtm {
-    width:100%;
-    /* position:absolute; */
-    bottom:0;
-    background-color: gray;
-    z-index:0;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
-  }
+}
