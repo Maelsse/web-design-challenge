@@ -1,8 +1,19 @@
-img {
-  max-width: 100%;
-  display: block;
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: lightgray;
+}
+
+table,
+th,
+td {
+  border: 1.5px solid black;
   margin-left: auto;
   margin-right: auto;
+  border-collapse: collapse;
+  width: auto;
+  text-align: center;
+  font-size: auto;
 }
 
 h1,
@@ -35,52 +46,20 @@ p {
   text-align: left;
 }
 
-.navbar {
-  position: absolute;
-  right: 30px;
-}
-
-.navbar a {
-  background-color: white;
-}
-
-.box {
-  margin-top: 50px;
-  margin-bottom: 60px;
-  padding: 10px 30px 10px;
-  color: #ffffff;
-  background-color: white;
-
-}
-
-body {
-  width: 100%;
-  min-height: 100%;
-  background-color: lightgray;
-}
-
-table,
-th,
-td {
-  border: 1.5px solid black;
+img {
+  max-width: 100%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  border-collapse: collapse;
-  width: auto;
-  text-align: center;
-  font-size: auto;
 }
 
-.col {
-  width: 100%;
-}
-
-.homebtn {
+.navbar{
+  max-height: 50px;
   background-color: white;
-  z-index: 2;
+  font-size: 15px;
 }
 
-.homebtn a {
+.navbar-brand{
   width: 110px;
   background: lightseagreen;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -93,13 +72,31 @@ td {
   margin: 0px 0px 0px 40px;
 }
 
+.header .navbar-brand{
+  color: white;
+  margin-left: 0px;
+  padding: inherit;
+  font-weight: bold;
+  background-color: lightseagreen;
+  font-family: G;
+}
+
+.nav-link:hover {
+  background-color: white;
+ }
+
+.navbar-brand:hover {
+color: rgb(45, 158, 175);
+}
 .compp {
   text-align: center;
 }
-
-.divtop {
+.box {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 10px 30px 10px;
+  color: white;
   background-color: white;
-  z-index: 2;
 }
 
 .imgbox {
@@ -115,50 +112,62 @@ td {
   border-style: solid;
 }
 
+.active {
+  border-color: lightseagreen;
+  border-style: solid;
+}
+
 .divtable {
   text-align: center;
   background-color: white;
   z-index: 1;
-  width: fit-content;
+  width: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
-.divbtm {
-  width: 100%;
-  /* position:absolute; */
-  bottom: 0;
-  background-color: gray;
-  z-index: 0;
-  font-size: 12px;
-  color: white;
+footer {
+  background-color: darkgray;
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-top-color: lavender;
+  color: darkorchid;
+  min-height: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
   text-align: center;
-  padding: 5px;
-  margin: 0px;
-}
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 15px;
+  }
+
 
 /* Adding media queries to....when the screen is smaller than 480 pixels */
-@media (max-width: 600px) {
-  .navbar li {
-    padding: 10px;
-  }
 
-  .homebtn {
+@media(max-width: 992px) {
+  .navbar {
+    max-height: none;
+    padding: inherit;
     background-color: lightseagreen;
-    align-items: flex-end;
+    text-align: center;
   }
-
-  .homebtn a {
+  .navbar-light .navbar-nav .nav-link{
     color: white;
   }
 
-  .navbar ul {
-    visibility: shown;
+  .navbar div {
+    margin: inherit;
   }
-
-  .divtop {
-    background-color: lightseagreen;
+  .navbar-brand {
+    padding: 10px;
   }
-
-  #nav-select {
-    visibility: visible;
+  button{
+    margin-right: 30px;
+  }
+  button:focus {
+    outline: 1px dotted;
+    outline: auto 5px;
   }
 }
